@@ -3,7 +3,7 @@ import { useDebts } from '../hooks/useDebts'
 import { useAuth0 } from '@auth0/auth0-react'
 import DebtData from './Debt'
 import { useState } from 'react'
-// import { IfAuthenticated, IfNotAuthenticated } from './Authenticated'
+import { IfNotAuthenticated } from './Authenticated'
 
 function App() {
   const [months, setMonths] = useState(0)
@@ -52,12 +52,14 @@ function App() {
           <h1 className="text-3xl font-bold underline">Debt Free Me</h1>
           <nav>
             {/* <IfAuthenticated> */}
-            <button onClick={handleSignOut}>Sign Out</button>
-            <button onClick={iterateMonths}>Next Month</button>
-            {user && <p>Signed in as: {user?.nickname}</p>}
+            <div className="debt-info-container">
+              <button onClick={handleSignOut}>Sign Out</button>
+              <button onClick={iterateMonths}>Next Month</button>
+              {user && <p>Signed in as: {user?.nickname}</p>}
 
-            <p>{months}</p>
-            <div>
+              <p>{months}</p>
+            </div>
+            <div className="debt-card-container">
               {data &&
                 data.map((debt: Debt) => (
                   <div key={debt.id}>
@@ -65,10 +67,10 @@ function App() {
                   </div>
                 ))}
             </div>
-            {/* </IfAuthenticated>
-          <IfNotAuthenticated> */}
-            <button onClick={handleSignIn}>Sign In</button>
-            {/* </IfNotAuthenticated> */}
+            {/* </IfAuthenticated> */}
+            <IfNotAuthenticated>
+              <button onClick={handleSignIn}>Sign In</button>
+            </IfNotAuthenticated>
           </nav>
         </div>
       </>

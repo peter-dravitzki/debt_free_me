@@ -1,13 +1,52 @@
-.debt-card {
+body {
   display: flex;
-
-  width: 100%;
-  height: min-content;
-  border: 2px solid green;
-  margin: 10px;
+  justify-content: center;
+  background: radial-gradient(pink, yellow, red);
 }
-.header {
-  border: 2px solid red;
-  width: fit-content;
-  height: min-content;
+p {
+  font-size: 20px;
+}
+h1 {
+  text-align: center;
+}
+.debt-info-container {
+  display: block;
+  text-align: center;
+}
+.debt-card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.debt-card {
+  display: flexbox;
+  justify-content: center;
+  vertical-align: center;
+  width: 400px;
+  height: 300px;
+  border: 2px solid green;
+  border-radius: 25px;
+  margin: 10px;
+  background: linear-gradient(45deg, blue, green);
+}
+.debt-name {
+  position: relative;
+  margin: 10px;
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
+  background: radial-gradient(white, gray);
+}
+.debt-owing {
+  position: relative;
+  top: 90px;
+  left: -80px;
+  margin: 10px;
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
+  background: radial-gradient(white, beige);
+}
+.progressbar-container {
+  position: relative;
+  top: 130px;
 }
