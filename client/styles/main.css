@@ -1,3 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+.debt-card {
+  display: flex;
+
+  width: 100%;
+  height: min-content;
+  border: 2px solid green;
+  margin: 10px;
+}
+.header {
+  border: 2px solid red;
+  width: fit-content;
+  height: min-content;
+}

@@ -1,0 +1,142 @@
+[
+  {
+    "name": "Credit Card A",
+    "debt_owing": 2500,
+    "minimum_payment": 100,
+    "interest_rate": 18,
+    "total_debt": 3000
+  },
+  {
+    "name": "Student Loan",
+    "debt_owing": 15000,
+    "minimum_payment": 200,
+    "interest_rate": 5,
+    "total_debt": 18000
+  },
+  {
+    "name": "Car Loan",
+    "debt_owing": 8000,
+    "minimum_payment": 300,
+    "interest_rate": 7,
+    "total_debt": 10000
+  },
+  {
+    "name": "Mortgage",
+    "debt_owing": 200000,
+    "minimum_payment": 1000,
+    "interest_rate": 4,
+    "total_debt": 250000
+  },
+  {
+    "name": "Personal Loan",
+    "debt_owing": 5000,
+    "minimum_payment": 150,
+    "interest_rate": 10,
+    "total_debt": 6000
+  },
+  {
+    "name": "Credit Card B",
+    "debt_owing": 3500,
+    "minimum_payment": 120,
+    "interest_rate": 20,
+    "total_debt": 4000
+  },
+  {
+    "name": "Medical Bill",
+    "debt_owing": 1000,
+    "minimum_payment": 50,
+    "interest_rate": 0,
+    "total_debt": 1000
+  },
+  {
+    "name": "Home Equity Loan",
+    "debt_owing": 30000,
+    "minimum_payment": 400,
+    "interest_rate": 6,
+    "total_debt": 35000
+  },
+  {
+    "name": "Store Credit",
+    "debt_owing": 2000,
+    "minimum_payment": 80,
+    "interest_rate": 15,
+    "total_debt": 2500
+  },
+  {
+    "name": "401(k) Loan",
+    "debt_owing": 7000,
+    "minimum_payment": 250,
+    "interest_rate": 3,
+    "total_debt": 8000
+  },
+  {
+    "name": "IRS Debt",
+    "debt_owing": 5000,
+    "minimum_payment": 200,
+    "interest_rate": 8,
+    "total_debt": 6000
+  },
+  {
+    "name": "Business Loan",
+    "debt_owing": 20000,
+    "minimum_payment": 600,
+    "interest_rate": 12,
+    "total_debt": 25000
+  },
+  {
+    "name": "Payday Loan",
+    "debt_owing": 1500,
+    "minimum_payment": 100,
+    "interest_rate": 30,
+    "total_debt": 2000
+  },
+  {
+    "name": "Line of Credit",
+    "debt_owing": 10000,
+    "minimum_payment": 350,
+    "interest_rate": 9,
+    "total_debt": 12000
+  },
+  {
+    "name": "Utility Bill Arrears",
+    "debt_owing": 600,
+    "minimum_payment": 50,
+    "interest_rate": 0,
+    "total_debt": 600
+  },
+  {
+    "name": "Peer-to-Peer Loan",
+    "debt_owing": 4000,
+    "minimum_payment": 150,
+    "interest_rate": 14,
+    "total_debt": 5000
+  },
+  {
+    "name": "Family Loan",
+    "debt_owing": 2000,
+    "minimum_payment": 100,
+    "interest_rate": 0,
+    "total_debt": 2000
+  },
+  {
+    "name": "Business Credit Card",
+    "debt_owing": 6000,
+    "minimum_payment": 200,
+    "interest_rate": 18,
+    "total_debt": 7000
+  },
+  {
+    "name": "Rent Arrears",
+    "debt_owing": 1200,
+    "minimum_payment": 150,
+    "interest_rate": 0,
+    "total_debt": 1200
+  },
+  {
+    "name": "Gym Membership Fee",
+    "debt_owing": 150,
+    "minimum_payment": 20,
+    "interest_rate": 0,
+    "total_debt": 150
+  }
+]

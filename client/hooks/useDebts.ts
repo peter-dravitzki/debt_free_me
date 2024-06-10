@@ -4,10 +4,10 @@ import {
   useQueryClient,
   MutationFunction,
 } from '@tanstack/react-query'
-import { getFruits } from '../apis/fruits.ts'
+import { getDebts } from '../apis/debts'
 
-export function useFruits() {
-  const query = useQuery({ queryKey: ['fruits'], queryFn: getFruits })
+export function useDebts() {
+  const query = useQuery({ queryKey: ['debts'], queryFn: getDebts })
   return {
     ...query,
     // Extra queries go here e.g. addFruit: useAddFruit()
@@ -15,13 +15,13 @@ export function useFruits() {
 }
 
 export function useFruitsMutation<TData = unknown, TVariables = unknown>(
-  mutationFn: MutationFunction<TData, TVariables>
+  mutationFn: MutationFunction<TData, TVariables>,
 ) {
   const queryClient = useQueryClient()
   const mutation = useMutation({
     mutationFn,
     onSuccess: () => {
-      queryClient.invalidateQueries({ queryKey: ['fruits'] })
+      queryClient.invalidateQueries({ queryKey: ['debts'] })
     },
   })
 
