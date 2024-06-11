@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import ProgressBar from './ProgressBar'
-import { getFormSubmissionInfo } from 'react-router-dom/dist/dom'
+import { useInfo } from '../hooks/useInfo'
+//import { useEditInfo } from '../hooks/useEditInfo'
+import Info from './Info'
+import { InfoData } from '../../models/info'
 
 interface Props {
   name: string
@@ -13,15 +16,15 @@ interface Props {
 export default function Debt(props: Props) {
   const debt_owing = (props.debt_owing / props.total_debt) * 100
   const [info, setInfo] = useState(props)
+  const newInfo = useInfo().data as InfoData
+  //const editedInfo = useEditInfo()
 
   function handleMoreInfo() {
-    return getInfo(info)
+    setInfo(info)
+    if (newInfo) return <Info {...newInfo}></Info>
   }
   function handleDelete() {}
-  function handleEdit() {
-    const editedInfo = editInfo()
-    setInfo(editedInfo)
-  }
+  function handleEdit() {}
   return (
     <div className="debt-card">
       <label className="debt-name">{props.name}</label>

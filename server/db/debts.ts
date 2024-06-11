@@ -9,7 +9,7 @@ export async function addDebt(data: DebtData) {
 
 //Read all
 export async function getAllDebts() {
-  const debt = await db('debts').select().orderBy('interest_rate', 'desc')
+  const debt = await db('debts').select().orderBy('debt_owing', 'asc')
   return debt as Debt[]
 }
 
